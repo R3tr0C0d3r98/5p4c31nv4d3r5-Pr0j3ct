@@ -10,10 +10,17 @@ h1{
     text-align: center;
 }
 p{
-    float: left;
     text-align: center;
     color: white;
-    
+    padding: 3px;
+}
+.human{
+    background-image: url("../images/PlayerSprite.png");
+}
+#buttons{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
 }
 #game{
     display: flex;
@@ -22,14 +29,17 @@ p{
 }
 #gamespace{
     background-color: black;
+    background-image: url("../images/spacebackground.jpg");
+    background-repeat: no-repeat;
+    background-size: 1000px, 650px;
     width: 1000px;
     height: 650px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#buttons{
+#HUD{
     display: flex;
     flex-direction: row;
-    text-align: center;
+    align-items: center;
 }
