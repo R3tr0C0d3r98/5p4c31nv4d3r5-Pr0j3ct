@@ -1,0 +1,35 @@
+body{
+    background-color: lightgray;
+}
+button{
+    width: 100px;
+    height: 25px;
+    font-size: 15px;
+}
+h1{
+    text-align: center;
+}
+p{
+    float: left;
+    text-align: center;
+    color: white;
+    
+}
+#game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#gamespace{
+    background-color: black;
+    width: 1000px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#buttons{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
