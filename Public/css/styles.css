@@ -1,45 +1,56 @@
 body{
     background-color: lightgray;
 }
-button{
-    width: 100px;
-    height: 25px;
-    font-size: 15px;
-}
+
 h1{
     text-align: center;
 }
-p{
-    text-align: center;
-    color: white;
-    padding: 3px;
-}
-.human{
-    background-image: url("../images/PlayerSprite.png");
-}
-#buttons{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-}
-#game{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#gamespace{
-    background-color: black;
-    background-image: url("../images/spacebackground.jpg");
+
+div#background {
+    width: 1200px;
+    height: 700px;
+    background-image: url('../images/spacebackground.jpg');
     background-repeat: no-repeat;
-    background-size: 1000px, 650px;
-    width: 1000px;
-    height: 650px;
+    background-size: 1200px, 700px;
     display: flex;
-    flex-direction: column;
+    position: absolute;
     align-items: center;
 }
-#HUD{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+
+div#hero {
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/PlayerSprite.png');
+    background-size: 50px,50px;
+    position: absolute;
+    left: 575px;
+    top: 600px; 
+}
+
+div#missiles {
+    width: 1200px;
+    height: 800px;
+    position: absolute;
+}
+
+div.missile1 {
+    width: 10px;
+    height: 28px;
+    background-image: url('../images/laser.png');
+    background-size: 10px, 28px;
+    position: absolute;
+}
+
+div#enemies {
+    width: 1200px;
+    height: 800px;
+    position: absolute;
+}
+
+div.enemy {
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/AlienSprite.png');
+    background-size: 50px, 50px;
+    position: absolute;
 }
